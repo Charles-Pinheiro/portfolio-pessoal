@@ -1,0 +1,104 @@
+body {
+    /* Resetando margens */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* MENU FIXO */
+header {
+    background: #0056a3;
+    color: #fff;
+    padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+
+.header-link:hover {
+    background: #fff;
+    color: #0056a3;
+}
+
+/* CONTAINER GERAL */
+main {
+    margin-top: 110px; /* espaço pro menu fixo */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* ESTILO DOS CARDS (SEÇÕES) */
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    scroll-margin-top: 130px; /* Para evitar que o menu se sobreponha ao conteúdo da seção selecionada */
+}
+
+section h2 {
+    color: #0056a3;
+    margin-top: 0;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 8px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: #0056a3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #003f73;
+}
