@@ -1,6 +1,5 @@
 body {
-    /* Resetando margens */
-    margin: 0;
+    margin: 0; /* Resetando margens */
     background-color: #f0f0f0;
 }
 
@@ -9,12 +8,12 @@ header {
     background: #0056a3;
     color: #fff;
     padding: 15px 25px;
-    position: fixed;
+    position: fixed; /* Para deixar o menu sempre fixo e aparecendo na página */ 
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* Para o menu se sobrepor aos conteúdos que vão sendo rolados para cima */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Para deixar o display do menu em formato de coluna, ficando o 'h1' em cima e os 'a' embaixo */
     align-items: center;
 }
 
@@ -26,8 +25,9 @@ header {
     font-size: 40px;
 }
 
+/* LINKS DO MENU */
 .header-link {
-    text-decoration: none;
+    text-decoration: none; /* Remove o estilo padrão da tag 'a' */
     color: #fff;
     margin: 0 15px;
     font-weight: bold;
@@ -37,6 +37,7 @@ header {
     transition: 0.6s;
 }
 
+/* Estilo aplicado quando o cursor estiver em cima das tags 'a' do menu */
 .header-link:hover {
     background: #fff;
     color: #0056a3;
@@ -73,6 +74,18 @@ section img {
 
 section p {
     line-height: 1.6;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #0056a3;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+.project-link:hover {
+    background: #0056a3;
+    color: #fff;
 }
 
 /* FORMULÁRIO */

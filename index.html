@@ -13,10 +13,11 @@
             Meu Portfólio Pessoal
         </h1>
         <div class="links">
-            <a href="#about">Sobre mim</a>
-            <a href="#education">Formação</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#contact">Contato</a>
+            <!-- LINKS PARA NAVEGAR ENTRE AS SEÇÕES DO SITE -->
+            <a class="header-link" href="#about">Sobre mim</a>
+            <a class="header-link" href="#education">Formação</a>
+            <a class="header-link" href="#portfolio">Portfólio</a>
+            <a class="header-link" href="#contact">Contato</a>
         </div>
     </header>
 
@@ -24,36 +25,61 @@
     <main>
         <!-- SOBRE -->
         <section id="about">
-            <h1>Sobre mim</h1>
+            <h2>Sobre mim</h2>
+            <img src="images/me.jpeg" alt="about">
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem at consequatur perspiciatis, odio labore vero dolorem asperiores officia neque assumenda eveniet architecto cum corporis libero nam, repudiandae ratione ipsa nemo.
+                Me chamo Charles Pinheiro, tenho 28 anos e sou natural de Porto Alegre, no Rio Grande do Sul.
+                Tenho interesse em estudar diferentes áreas, como tecnologia, saúde e desenvolvimento pessoal, sempre buscando aprender e evoluir.
+                Sou apaixonado por futebol, torcedor do Grêmio, e costumo ir ao estádio pelo menos duas vezes por mês para acompanhar os jogos do meu time.
             </p>
         </section>
 
         <!-- FORMAÇÃO -->
         <section id="education">
             <h2>Formação</h2>
-            <img src="https://via.placeholder.com/800x300" alt="Estudos">
+            <img src="images/books.jpeg" alt="education">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quod mollitia. Distinctio consectetur saepe fuga libero eveniet commodi asperiores ipsum culpa, veritatis dicta ratione, cumque ipsam reprehenderit modi id vel!
+                Terminei o ensino médio em 2015, mas apenas em 2025 tive a oportunidade de iniciar o ensino superior.
+                Atualmente, curso Análise e Desenvolvimento de Sistemas na Uninter.
+                Antes disso, em 2021, realizei um curso de desenvolvimento full stack com duração de um ano, que marcou meu início na área de tecnologia.
+                No momento, também estudo inglês de forma autodidata e considero que meu nível é B1 em leitura e audição.
             </p>
         </section>
 
         <!-- PORTFÓLIO -->
         <section id="portfolio">
             <h2>Portfólio</h2>
-            <img src="https://via.placeholder.com/800x300" alt="Projetos">
+            <img src="images/projects.png" alt="projects">
             <p>Aqui estão alguns trabalhos desenvolvidos:</p>
+            <!-- LISTA COM LINKS EXTERNOS PARA MEUS PROJETOS -->
             <ul>
-                <li><a>Meu GitHub</a></li>
-                <li><a">Projeto de site</a></li>
+                <li>
+                    <a class="project-link" href="https://github.com/Charles-Pinheiro" target="blank">
+                        Meu GitHub
+                    </a>
+                </li>
+                <li>
+                    <a class="project-link" href="https://charles-pinheiro.github.io/sobre-mim/" target="blank">
+                        Projeto básico
+                    </a>
+                </li>
+                <li>
+                    <a class="project-link" href="https://rick-morty-paginator.vercel.app/" target="blank">
+                        Projeto mostrando paginação da API com tema Rick e Morty
+                    </a>
+                </li>
+                <li>
+                    <a class="project-link" href="https://charles-pinheiro.github.io/hanoi-tower/" target="blank">
+                        Projeto Torre de Hanoi
+                    </a>
+                </li>
             </ul>
         </section>
 
         <!-- CONTATO -->
         <section id="contact">
             <h2>Contato</h2>
-            <img src="" alt="Contato">
+            <img src="images/contact.png" alt="contact">
             <form>
                 <input type="text" placeholder="Seu nome" required>
                 <input type="email" placeholder="Seu e-mail" required>
